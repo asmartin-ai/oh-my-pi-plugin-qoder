@@ -43,7 +43,7 @@ omp --model qoder/auto
 
 The nine legacy models work with just a Qoder login; nothing else needs to be installed.
 
-The six api3 models additionally require Qoder's CLI (`qodercli` 1.1.2), installed either at `~/.qoder/bin/qodercli` or as `@qoder-ai/qodercli` under `node_modules`. The plugin locates the CLI's auth WASM at runtime, extracts it, verifies it against a known-good SHA-256 digest, and caches the verified module under the plugin cache directory; the WASM is never bundled with or redistributed by this plugin. If the WASM cannot be found or instantiated, the six api3 models and their aliases are not registered and the plugin serves the 19 legacy rows. `QODER_WASM_PATH` (a direct `.wasm` path) and `QODER_HOME` (the install root) override the search.
+The six api3 models additionally require Qoder's CLI (`qodercli` 1.1.2 or 1.1.15), installed either at `~/.qoder/bin/qodercli` or as `@qoder-ai/qodercli` under `node_modules`. The plugin locates the CLI's auth WASM at runtime, extracts it, verifies it against a known-good SHA-256 digest, and caches the verified module under the plugin cache directory; the WASM is never bundled with or redistributed by this plugin. If the WASM cannot be found or instantiated, the six api3 models and their aliases are not registered and the plugin serves the 19 legacy rows. `QODER_WASM_PATH` (a direct `.wasm` path) and `QODER_HOME` (the install root) override the search.
 
 ## Models
 
@@ -111,7 +111,7 @@ Browser authorization and real-account streamed chat were validated with `qoder/
 
 ## Scope and affiliation
 
-This project is not affiliated with or endorsed by Qoder. The integration was derived from the public `@qoder-ai/qodercli` package, with the current catalog validated against version 1.1.2. Review Qoder's terms before using an unofficial client with your account.
+This project is not affiliated with or endorsed by Qoder. The integration was derived from the public `@qoder-ai/qodercli` package, with the current catalog validated against versions 1.1.2 and 1.1.15. Review Qoder's terms before using an unofficial client with your account.
 
 ## License
 

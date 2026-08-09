@@ -178,6 +178,10 @@ function bridgeMissingEnv(): {
 		env: {
 			...process.env,
 			HOME: sandbox,
+			// Windows: node's os.homedir() prefers USERPROFILE over HOME; without
+			// this the real profile's bun-global qodercli is still scanned and
+			// (once whitelisted) the bridge loads, breaking the 19-row contract.
+			USERPROFILE: sandbox,
 			XDG_CACHE_HOME: join(sandbox, "xdg-cache"),
 			QODER_HOME: join(sandbox, "qoder-home"),
 			QODER_WASM_PATH: join(sandbox, "missing.wasm"),

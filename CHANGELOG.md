@@ -1,5 +1,16 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Whitelisted the qodercli 1.1.15 auth WASM (sha256 `b3ddd7c9…`) alongside
+  1.1.2, so the six api3-only model families (Cantus, Qwen3.8-Max-Preview,
+  Qwen3.7-Max, Kimi-K3, GLM-5.2, DeepSeek-V4-Flash) register on current
+  qodercli installs. The 1.1.15 module was verified ABI-identical to 1.1.2
+  (same wasm-bindgen exports and imports) and validated live end to end
+  (`qoder/dfmodel`, `qoder/gm51model` streamed through compiled omp).
+
 ## [0.3.1] - 2026-07-24
 
 ### Fixed

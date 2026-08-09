@@ -44,10 +44,13 @@ export const QODER_PRIVATE_DATA_POLICY = "disagree";
 /**
  * SHA-256 hashes of auth-WASM payloads this bridge will instantiate. An
  * embedded payload whose hash is not listed is treated as an unsupported
- * qodercli version: never instantiated, api3 disabled. CLI 1.1.2 listed.
+ * qodercli version: never instantiated, api3 disabled. CLI 1.1.2 and 1.1.15
+ * listed; 1.1.15 was verified ABI-identical (same wasm-bindgen exports and
+ * imports) before whitelisting.
  */
 export const QODER_WASM_KNOWN_GOOD_SHA256: readonly string[] = [
-	"ac37caa95b4b1e01e2bd1b4dd087823fa67cfb2dfb9a3db04446043684ad09c9",
+	"ac37caa95b4b1e01e2bd1b4dd087823fa67cfb2dfb9a3db04446043684ad09c9", // CLI 1.1.2
+	"b3ddd7c9235cea51a965582506fa6281bb298ddab782ff3edb3f9015da2468d4", // CLI 1.1.15
 ];
 
 /** Prepared HTTP request as returned by the WASM (url + signed headers + encrypted body). */
