@@ -17,8 +17,8 @@
 			"author": {
 				"name": "metaphorics"
 			},
-			"homepage": "https://github.com/metaphorics/oh-my-pi-plugin-qoder",
-			"repository": "https://github.com/metaphorics/oh-my-pi-plugin-qoder",
+			"homepage": "https://github.com/asmartin-ai/oh-my-pi-plugin-qoder",
+			"repository": "https://github.com/asmartin-ai/oh-my-pi-plugin-qoder",
 			"license": "MIT",
 			"keywords": ["oh-my-pi", "omp", "qoder", "oauth", "provider"],
 			"category": "development"
