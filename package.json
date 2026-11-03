@@ -5,11 +5,11 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/metaphorics/oh-my-pi-plugin-qoder.git"
+		"url": "git+https://github.com/asmartin-ai/oh-my-pi-plugin-qoder.git"
 	},
-	"homepage": "https://github.com/metaphorics/oh-my-pi-plugin-qoder#readme",
+	"homepage": "https://github.com/asmartin-ai/oh-my-pi-plugin-qoder#readme",
 	"bugs": {
-		"url": "https://github.com/metaphorics/oh-my-pi-plugin-qoder/issues"
+		"url": "https://github.com/asmartin-ai/oh-my-pi-plugin-qoder/issues"
 	},
 	"omp": {
 		"extensions": [
