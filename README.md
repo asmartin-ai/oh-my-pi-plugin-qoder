@@ -2,12 +2,16 @@
 
 An unofficial [oh-my-pi](https://github.com/can1357/oh-my-pi) extension that adds Qoder browser login and the Qoder model catalog: up to 15 base models plus 22 long-context aliases (37 rows). Six api3-only families register only when the installed Qoder CLI's auth WASM is available; without it the plugin degrades to the 19 legacy rows.
 
+**Status:** An unofficial fork maintained independently of its original parent.
+The parent repository is not currently accessible via the GitHub API; provider
+and host compatibility may change.
+
 ## Install
 
-Install through the repository's omp marketplace:
+Install through this fork's omp marketplace:
 
 ```text
-/marketplace add metaphorics/oh-my-pi-plugin-qoder
+/marketplace add asmartin-ai/oh-my-pi-plugin-qoder
 /marketplace install oh-my-pi-plugin-qoder@qoder-plugins
 ```
 
@@ -18,7 +22,7 @@ This compatibility provider supports omp 17.x starting with 17.0.6. Hosts in tha
 Direct Git installation is also supported:
 
 ```sh
-omp plugin install https://github.com/metaphorics/oh-my-pi-plugin-qoder
+omp plugin install https://github.com/asmartin-ai/oh-my-pi-plugin-qoder
 ```
 
 ## Use
